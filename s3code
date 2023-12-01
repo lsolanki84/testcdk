@@ -7,7 +7,7 @@ export class BucketResourceStack extends cdk.Stack {
 
     //The code that defines your stack goes here
     new s3.Bucket(this, 'MyFirstBucket', {
-      bucketName: 'my-first-bucket',
+      bucketName: 'my-first-cdk-new-bucket',
       publicReadAccess: true,
       removalPolicy: cdk.RemovalPolicy.DESTROY
 
