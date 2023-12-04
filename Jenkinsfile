@@ -9,6 +9,7 @@ podTemplate(containers: [
   ]) {
 
     node(POD_LABEL) {
+        echo "${env.getEnvironment()}"
         stage('Project enviroment setup') {
             container('cdk-agent') {
 
