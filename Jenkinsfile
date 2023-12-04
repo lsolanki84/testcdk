@@ -45,11 +45,15 @@ podTemplate(containers: [
                 
             
                     sh '''
+                       ls -lrth
+                       pwd
                        mkdir cdk_workshop && cd cdk_workshop
                        cdk init lambda-app --language python
                        . .venv/bin/activate
                        pip install -r requirements.txt
                        mkdir lambda
+                       ls -lrth
+                       pwd
                        cp ../lambda/hello.py lambda/hello.py
                        cp ../cdk_workshop_stack.py cdk_workshop/cdk_workshop_stack.py
                        cdk synth
