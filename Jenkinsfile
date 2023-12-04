@@ -56,8 +56,8 @@ podTemplate(containers: [
                        cdk synth
                        cdk diff
                        cdk bootstrap
-#                       cdk deploy --require-approval never
-                       cdk destroy -f
+                       cdk deploy --require-approval never
+#                       cdk destroy -f
                     '''
                 }
             
