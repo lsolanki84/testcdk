@@ -45,19 +45,14 @@ podTemplate(containers: [
                 git url: 'https://github.com/lsolanki84/testcdk.git', branch: 'main'
             
                     sh '''
-                       ls -lrth
-                       pwd
                        mkdir cdk_workshop && cd cdk_workshop
                        cdk init sample-app --language python
                        . .venv/bin/activate
                        pip install -r requirements.txt
                        mkdir lambda
-                       ls -lrth
-                       pwd
                        cp ../lambda/hello.py lambda/hello.py
-                       cat lambda/hello.py
                        cp ../cdk_workshop_stack.py cdk_workshop/cdk_workshop_stack.py
-                       cat cdk_workshop/cdk_workshop_stack.py
+                       cdk doctor
                        cdk synth
                        cdk diff
                        cdk bootstrap
