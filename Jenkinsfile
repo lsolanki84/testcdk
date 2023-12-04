@@ -42,7 +42,7 @@ podTemplate(containers: [
         }
 
                stage('Build CDK Template') {
-                
+                git url: 'https://github.com/lsolanki84/testcdk.git', branch: 'main'
             
                     sh '''
                        ls -lrth
