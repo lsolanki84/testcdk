@@ -48,7 +48,7 @@ podTemplate(containers: [
                        ls -lrth
                        pwd
                        mkdir cdk_workshop && cd cdk_workshop
-                       cdk init lambda-app --language python
+                       cdk init sample-app --language python
                        . .venv/bin/activate
                        pip install -r requirements.txt
                        mkdir lambda
