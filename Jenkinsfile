@@ -59,8 +59,8 @@ podTemplate(containers: [
                        cp ../cdk_workshop_stack.py cdk_workshop/cdk_workshop_stack.py
                        cat cdk_workshop/cdk_workshop_stack.py
                        cdk synth
-#                       cdk bootstrap
-#                       cdk deploy --require-approval never
+                       cdk bootstrap
+                       cdk deploy --require-approval never
 
                     '''
                 }
