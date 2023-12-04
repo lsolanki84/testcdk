@@ -55,7 +55,9 @@ podTemplate(containers: [
                        ls -lrth
                        pwd
                        cp ../lambda/hello.py lambda/hello.py
+                       cat lambda/hello.py
                        cp ../cdk_workshop_stack.py cdk_workshop/cdk_workshop_stack.py
+                       cat cdk_workshop/cdk_workshop_stack.py
                        cdk synth
 #                       cdk bootstrap
 #                       cdk deploy --require-approval never
