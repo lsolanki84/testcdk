@@ -35,10 +35,19 @@ podTemplate(containers: [
                     '''
                     }
                }
-            
+                stage('Create Artifact and Upload') {
+
+                    sh '''
+                    pwd
+                    ls -lrth
+                    '''
+
+
+                }
                  
             }
 
         }
+
     }
 }
